@@ -1,0 +1,21 @@
+Tests can be found in :
+src/test/java/com/herokuapp/computer_database/testFeatures/CRUD_feature.feature
+
+Two things need to be installed on the running machine:
+Java and Maven
+
+- Configure the properties file to meet your needs: Like URLs credentials etc
+/src/maim/resources/project.properties
+
+- To run all the tests please use command:
+```
+mvn clean test
+```
+- To generate the report locally:
+```
+mvn allure:serve
+```
+- To generate the report to /target/site/allure-maven-plugin/index.html
+```
+mvn allure:report
+```
